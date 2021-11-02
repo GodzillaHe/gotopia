@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>webpack</title>
+</head>
+<body>
+</body>
+<!-- <script type="text/javascript" src="./dist/bundle.js"></script> -->
+<script type="module" src="./src/index.js"></script>
+<!-- <script type="text/javascript">
+  (function (list) {
+    function require(file) {
+      exports = {};
+      (function (exports, code) {
+        eval(code)
+      })(exports, list[file])
+      return exports;
+    } 
+    require('index.js')
+  })({
+    'index.js': `
+        var add = require('add.js').default
+        console.log(add(1, 5))
+    `,
+    'add.js': `exports.default = function (a, b) {return a + b}`,
+  })
+  //1. 分析收集依赖放在list中, 全部传入
+  //2. 将
+</script> -->
+</html>
